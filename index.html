@@ -55,6 +55,23 @@
          button:hover {
          background: var(--tg-theme-secondary-bg-color);
          }
+          #form {
+         display: none;
+         text-align: center;
+         }
+         
+         input {
+         width: 90%;
+         outline: noone;
+         margin: 10px 5%;
+         font-size: 14px;
+         border: 2px solid silver;
+         border-radius: 5px;
+         }
+         
+         input:focus {
+         border-color: #db5d5d;
+         }
      </style>
  </head>
  <body>
@@ -65,6 +82,12 @@
             et dolore magna aliqua</p>
         <button id="buy">BUY</button>
     </div>
+    <form id="form">
+        <input type="text" placeholder="Имя" id="user_name">
+        <input type="text" placeholder="Email" id="user_email">
+        <input type="text" placeholder="Телефон" id="user_phone">
+        <button id="order"></button>
+    </form>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
  </body>
 </html>
